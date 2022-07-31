@@ -1,0 +1,2 @@
+class InvalidDataContractPayload(Exception):
+    pass

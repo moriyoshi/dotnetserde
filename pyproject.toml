@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "dotnetserde"
+version = "0.0.0"
+description = ""
+authors = ["Moriyoshi Koizumi"]
+license = "MIT"
+packages = [
+    { include = "dotnetserde", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tzlocal = "^4.2"
+pytz = "^2022.1"
+iso8601 = "^1.0.2"
+immutabledict = "^2.2.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^22.6.0"
+isort = "^5.10.1"
+mypy = "^0.971"
+types-pytz = "^2022.1.2"
+types-tzlocal = "^4.2.2"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 112
+
+[tool.isort]
+profile = "black"

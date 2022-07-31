@@ -1,0 +1,2 @@
+class DotNetSerdeException(Exception):
+    pass
